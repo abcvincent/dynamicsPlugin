@@ -1,7 +1,7 @@
 TARGET = v_repExtDynamicsOde
 
 DEFINES += INCLUDE_ODE_CODE
-DEFINES += DYNAMICS_PLUGIN_VERSION=10 # 10 since V-REP release 3.4.0, 9 with sim_ode_global_randomseed,8 since refactoring dyn plugins, 7 since separation of the 3 engines
+DEFINES += DYNAMICS_PLUGIN_VERSION=11 #11 since V-REP3.5.0Rev3+ # 10 since V-REP release 3.4.0, 9 with sim_ode_global_randomseed,8 since refactoring dyn plugins, 7 since separation of the 3 engines
 DEFINES += LIBRARY_NAME=\\\"DynamicsOde\\\"
 DEFINES += ENGINE_NAME=\\\"ODE\\\"
 DEFINES += dNODEBUG

@@ -1,7 +1,7 @@
 TARGET = v_repExtDynamicsNewton
 
 DEFINES += INCLUDE_NEWTON_CODE
-DEFINES += DYNAMICS_PLUGIN_VERSION=3 # 3 since V-REP release 3.4.0, 2 since refactoring dyn plugins,
+DEFINES += DYNAMICS_PLUGIN_VERSION=4 #4 since V-REP3.5.0Rev3+ # 3 since V-REP release 3.4.0, 2 since refactoring dyn plugins,
 DEFINES += LIBRARY_NAME=\\\"DynamicsNewton\\\"
 DEFINES += ENGINE_NAME=\\\"Newton\\\"
 DEFINES += _CUSTOM_JOINTS_STATIC_LIB

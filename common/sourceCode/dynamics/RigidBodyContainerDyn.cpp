@@ -563,7 +563,15 @@ void CRigidBodyContainerDyn::handleDynamics(float dt,float simulationTime)
         int passes=getDynamicsCalculationPasses(); // previously calculated
         for (int i=0;i<passes;i++)
         {
-            simHandleGeneralCallbackScript(sim_callbackid_dynstep,0,NULL);
+            simHandleGeneralCallbackScript(sim_callbackid_dynstep,0,NULL); // deprecated
+            int intDat[4];
+            float floatDat[1];
+            intDat[0]=0; // version
+            intDat[1]=i+1;
+            intDat[2]=passes;
+            intDat[3]=0;
+            floatDat[0]=CRigidBodyContainerDyn::getDynamicsInternalTimeStep();
+            _simDynCallback(intDat,floatDat);
             reportShapeConfigurations_forKinematicBodies(float(i+1)/float(passes),dt);
             _handleMotorControls(i+1,passes); // to enable/disable motors, to update target velocities, target positions and position control
             handleAdditionalForcesAndTorques(); // for shapes but also for "anti-gravity" particles or particels with fluid friction force!
@@ -577,7 +585,9 @@ void CRigidBodyContainerDyn::handleDynamics(float dt,float simulationTime)
                 totalPassesCount=passes;
             // Following moved inside the passes loop on 2009/11/29
             reportDynamicWorldConfiguration(totalPassesCount,false,simulationTime+float(i+1)*dt/float(passes));
-            simHandleGeneralCallbackScript(sim_callbackid_dynstep,1,NULL);
+            simHandleGeneralCallbackScript(sim_callbackid_dynstep,1,NULL); // deprecated
+            intDat[3]=1;
+            _simDynCallback(intDat,floatDat);
         }
         _applyCorrectEndConfig_forKinematicBodies(); // Added on 2010/10/7 to correct for subtle things for ODE (maybe even for Bullet!)
     }

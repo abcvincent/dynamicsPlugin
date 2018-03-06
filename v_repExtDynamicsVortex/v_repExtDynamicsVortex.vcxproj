@@ -88,7 +88,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>INCLUDE_VORTEX_CODE;VX_DLL;DYNAMICS_PLUGIN_VERSION=10;LIBRARY_NAME="DynamicsVortex";ENGINE_NAME="Vortex";dynReal=double;NEW_VORTEX_SOURCE;WIN_VREP;NOMINMAX;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>INCLUDE_VORTEX_CODE;VX_DLL;DYNAMICS_PLUGIN_VERSION=11;LIBRARY_NAME="DynamicsVortex";ENGINE_NAME="Vortex";dynReal=double;NEW_VORTEX_SOURCE;WIN_VREP;NOMINMAX;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\v_rep\sourceCode\interfaces;..\common\sourceCode;..\common\sourceCode\dynamics;sourceCode\dynamics\vortex;..\..\programming\include;c:\local\boost_1_62_0;..\..\programming\v_repMath;c:/CM Labs/Vortex Studio 2017a/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>

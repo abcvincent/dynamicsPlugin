@@ -1,7 +1,7 @@
 TARGET = v_repExtDynamicsBullet-2-83
 
 DEFINES += INCLUDE_BULLET_2_83_CODE
-DEFINES += DYNAMICS_PLUGIN_VERSION=9 # 9 since V-REP release 3.4.0, 8 since first plugin release with Bullet 2.83
+DEFINES += DYNAMICS_PLUGIN_VERSION=10 #10 since V-REP3.5.0Rev3+ # 9 since V-REP release 3.4.0, 8 since first plugin release with Bullet 2.83
 DEFINES += LIBRARY_NAME=\\\"DynamicsBullet_2_83\\\"
 DEFINES += ENGINE_NAME=\\\"Bullet\\\"
 
