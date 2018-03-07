@@ -8,6 +8,7 @@
 *.opensdf
 ui_qdlg*.h
 .qmake.stash
+.DS_Store
 Makefile
 Makefile.Debug
 Makefile.Release
@@ -48,3 +49,4 @@ release
 object_script.*.Debug
 object_script.*.Release
 build-*
+
