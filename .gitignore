@@ -47,3 +47,4 @@ debug
 release
 object_script.*.Debug
 object_script.*.Release
+build-*

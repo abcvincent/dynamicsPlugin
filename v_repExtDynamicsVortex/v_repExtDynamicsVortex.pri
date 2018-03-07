@@ -2,7 +2,7 @@ TARGET = v_repExtDynamicsVortex
 
 DEFINES += INCLUDE_VORTEX_CODE
 DEFINES += VX_DLL
-DEFINES += DYNAMICS_PLUGIN_VERSION=10 # 10 since V-REP release 3.4.0, 9 since new Vortex (V-REP 3.4.0), 8 since refactoring dyn plugins,
+DEFINES += DYNAMICS_PLUGIN_VERSION=11 #11 since V-REP3.5.0Rev3+ # 10 since V-REP release 3.4.0, 9 since new Vortex (V-REP 3.4.0), 8 since refactoring dyn plugins,
 DEFINES += LIBRARY_NAME=\\\"DynamicsVortex\\\"
 DEFINES += ENGINE_NAME=\\\"Vortex\\\"
 
